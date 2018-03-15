@@ -1,0 +1,7 @@
+<input type="text" ng-model="searchText">
+<button ng-click="search()">Search</button>
+<div ng-repeat="book in Books">
+   <h1><a href="#!/book/{{book.ID}}">{{book.Title|uppercase}}</a></h1>
+   <p>{{book.Description}}</p>
+   <img src="{{book.Image}}" alt="">
+</div>
