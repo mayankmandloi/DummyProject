@@ -1,0 +1,5 @@
+<div ng-repeat="book in Books|filter:id">
+    <h1><a href="#!/book/{{book.ID}}">{{book.Title|uppercase}}</a></h1>
+    <p>{{book.Description}}</p>
+    <img src="{{book.Image}}" alt="">
+</div>
